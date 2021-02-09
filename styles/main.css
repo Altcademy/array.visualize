@@ -26,3 +26,8 @@ svg {
 pre {
   font-size: 1rem;
 }
+
+div.parens {
+  color: red;
+  font-size: 22px;
+}

@@ -10,23 +10,52 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <div class="container mt-5">
+    <div class="container my-5">
       <h1>Array Visualizer</h1>
       <h3 class="mb-5">See how JavaScript arrays work</h3>
       
-      <h4 id="ex_1">Get a value by index</h4>
-      <p>To get a value of an array at a specific index, we use square brackets <code>[]</code>.</p>
+      <div class="mb-5">
+        <h4 id="ex_1">Get a value by index</h4>
+        <p>To get a value of an array at a specific index, we use square brackets <code>[]</code>.</p>
 <pre>
 var arr = ['Johnny', 'David', 'Sarah'];
 </pre>
-      <div id="_one"></div>
-      <p>Click one of the below buttons to highlight the value by index</p>
-      <div id="_one_buttons">
-        <button data-index="0">arr[0]</button>
-        <button data-index="1">arr[1]</button>
-        <button data-index="2">arr[2]</button>
-      </div>    
+        <div id="_one"></div>
+        <p>Click one of the below buttons to highlight the value by index</p>
+        <div id="_one_buttons">
+          <button data-index="0">arr[0]</button>
+          <button data-index="1">arr[1]</button>
+          <button data-index="2">arr[2]</button>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <h4 id="ex_2">Get a value in a nested array</h4>
+        <p>To get a value of a nested array, we use two square brackets <code>[]</code>. The first one accesses values in the parent array, the second one accesses values in the nested array.</p>
+<pre>
+var arr = [['Johnny', 'David'], ['Tom', 'Paul']];
+</pre>
+        <div class="parens d-inline-block">[</div>
+        <div id="_two_1" class="d-inline-block" style="vertical-align: bottom;"></div>
+        <span>,</span>
+        <div id="_two_2" class="d-inline-block" style="vertical-align: bottom;"></div>
+        <div class="parens d-inline-block">]</div>
+        <p class="mt-5">Click one of the below buttons to highlight the value by index</p>
+        <div id="_two_buttons_1" class="d-inline-block">
+          <button data-index="0">arr[0][0]</button>
+          <button data-index="1">arr[0][1]</button>
+        </div>
+        <div id="_two_buttons_2" class="d-inline-block">
+          <button data-index="0">arr[1][0]</button>
+          <button data-index="1">arr[1][1]</button>
+        </div>
+      </div>
     </div>
+
+    <footer class="container">
+      <p class="mb-0">For <a href="https://www.altcademy.com/">Altcademy.com</a></p>
+      <p>Array.visualize library by <a href="https://github.com/danielstern/array.visualize">danielstern</a></p>
+    </footer>
 
     <script src="./scripts/jquery.js"></script>
     <script src="./scripts/d3/d3.js"></script>
