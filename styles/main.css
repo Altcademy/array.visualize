@@ -7,7 +7,7 @@ svg {
 }
 
 .demo svg{
-	font-size: 36px;
+	font-size: 24px;
 }
 
 .demo svg .sm{
@@ -30,4 +30,8 @@ pre {
 div.parens {
   color: red;
   font-size: 22px;
+}
+
+.container p {
+  max-width: 600px;
 }
